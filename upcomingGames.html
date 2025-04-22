@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Vault: Upcoming Games</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="stylesheet" href="./upcomingGames.css">
+    <link rel="stylesheet" href="./games.css">
+    <link rel="stylesheet" href="./consoles&peripherals.css">
+    <link rel="stylesheet" href="./FAQ.css">
+    <link rel="stylesheet" href="./account.css">
+
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav_list');
+            navList.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="./images/logo.png" alt="Logo">
+            <span><h1>PiXEL VAULT</h1></span>
+        </section>
+        <section class="search_container">
+            <input type="text" placeholder="Search for games...">
+            <button type="submit"><img src="./images/search_icon (2).png"></button>
+        </section>
+
+        <nav class="nav_links">
+            <section class="hamburger" onclick="toggleMenu()">&#9776;</section>
+            <ul id="nav_list">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./aboutUs.html" class="active">About Us</a></li>
+                <li><a href="./upcomingGames.html" class="active">Upcoming Games</a></li>
+                <li><a href="./games.html" class="active">Games</a></li>
+
+                <!--DropDown List-->
+                <li class="dropdown">
+                    <a href="./consoles&peripherals.html" class="active">Accessories &#x25BC;</a>
+                    <div class="dropdown-content">
+                        <a href="./consoles&peripherals.html#consoles" class="active">Consoles</a>
+                        <a href="./consoles&peripherals.html#peripherals" class="active">Peripherals</a>
+                    </div>
+                </li>
+                <li><a href="./order.html" class="active">Order</a></li>
+                <li><a href="./FAQ.html" class="active">FAQ</a></li>
+                <li><a href="./account.html" class="active">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+      <section class="ug_container">
+        <section class="ug section_1">
+            <div class="ug_text">
+                <h2>Checkout our Upcoming Games</h2>
+                <p>At our GameStore, we are committed to keeping you up-to-date with all the latest and most exciting upcoming games.
+                  Our team closely follows industry trends, upcoming releases, and exclusive announcements, ensuring that we offer you the best
+                  selection of new titles.<br><br> From highly anticipated AAA games to hidden indie gems, we provide detailed information,
+                  release dates, and pre-order opportunities so you can be the first to get your hands on the next big hit.
+                  Stay ahead of the game with us, and never miss out on the next gaming adventure!<br><br>
+                  Sign up to get frequent updates on latest releases!
+                </p>
+                    
+                <a href="./account.html"><button  class="explore_now">Sign Up</button></a>
+            </div>
+        </section>
+
+        <section class="ug section_2">
+            <section class="ug_image_container">
+                <!-- Top Row of Images -->
+                <section class="ug_image_row">
+                    <figure>
+                        <img src="./images/upcoming games/ASC_shadow.jpg" alt="Image 1">
+                        <div class="overlay">
+                            <p><b>Assasin's Creed: Shadows</b></p>
+                            <p>Release date: 09/12/26</p>
+                            <button class="add_cart">Pre-Order</button>
+                        </div>
+                        <figcaption>Assasin's<br> Creed</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./images/upcoming games/gta6.jpg" alt="Image 2">
+                        <div class="overlay">
+                            <p><b>Grand Theft Auto 6</b></p><br>
+                            <p>Release date: 19/02/26</p>
+                            <button class="add_cart">Pre-Order</button>
+                        </div>
+                        <figcaption>Grand Theft <br>Auto 6</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./images/upcoming games/Star_wars.jpg" alt="Image 3">
+                        <div class="overlay">
+                            <p><b>Star Wars Knights</b></p><br>
+                            <p>Release date: 16/07/25</p>
+                            <button class="add_cart">Pre-Order</button>
+                        </div>
+                        <figcaption>Star Wars<br> Knights</figcaption>
+                    </figure>
+                </section>
+
+                <!-- Bottom Row of Images -->
+                <section class="ug_image_row">
+                    <figure>
+                        <img src="./images/upcoming games/star_wars_outlaws.jpeg" alt="Image 4">
+                        <div class="overlay">
+                            <p><b>Star Wars Outlaws</b></p><br>
+                            <p>Release date: 09/11/25</p>
+                            <button class="add_cart">Pre-Order</button>
+                        </div>
+                        <figcaption>Star Wars<br> Outlaws</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./images/upcoming games/avowed.jpg" alt="Image 5">
+                        <div class="overlay">
+                            <p><b>Avowed legacy</b></p><br>
+                            <p>Release date: 03/01/26</p>
+                            <button class="add_cart">Pre-Order</button>
+                        </div>
+                        <figcaption>Avowed<br>Legacy</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./images/upcoming games/redfall.jpg" alt="Image 6">
+                        <div class="overlay">
+                            <p><b>Red Fall Apocalypse</b></p><br>
+                            <p>Release date: 18/04/25</p>
+                            <button class="add_cart">Pre-Order</button>
+                        </div>
+                        <figcaption>Red Fall<br> Apocalypse</figcaption>
+                    </figure>
+                </section>
+            </section>
+        </section>
+      </section>
+   
+    </main>
+
+
+    <footer>
+        <section class="footer_container">
+    
+            <section class="footer_section">
+                <section class="logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </section><br>
+                <p> Your go-to source for gaming news, reviews, guides, and community.</p>
+    
+                <section class="social_links">
+                    <a href="https://web.facebook.com/"><img src="./images/facebook.png" class="socials"></a>
+                    <a href="https://www.instagram.com/"><img src="./images/instagram.png" class="socials"></a>
+                    <a href="https://x.com"><img src="./images/twitter.png" class="socials"></a>
+                    <a href="https://www.youtube.com/"><img src="./images/youtube.webp" class="socials"></a>
+                </section>
+            </section>
+    
+            <section class="footer_section">
+                <h3>Contact</h3><br>
+                <ul class="footer">
+                    <li><a href="mailto:support@pixelvault.com">support@pixelvault.com</a></li>
+                    <li><a>+1 234 567 89</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>Pages</h3><br>
+                <ul class="footer">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./upcomingGames.html">Upcoming Games</a></li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./consoles&peripherals.html">Console and Peripherals</a></li>
+                    <li><a href="./FAQ.html">FAQ</a></li>
+                    <li><a href="./account.html">Account</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>User Terms and Policies</h3><br>
+                <ul class="footer">
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy and Cookies Policy</a></li>
+                </ul>
+                <img src="./images/payment_method.png" class="payment_method">
+            </section>
+            </section><br>
+    
+            <div class="white_line"></div><br>
+            <p class="copyright">&copy; 2024 PiXEL VAULT. All rights reserved.</p>
+        </footer>
+
+</body>
+</html>

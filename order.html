@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Vault: Order</title>
+    <link rel="stylesheet" href="./order.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="stylesheet" href="./upcomingGames.css">
+    <link rel="stylesheet" href="./games.css">
+    <link rel="stylesheet" href="./consoles&peripherals.css">
+    <link rel="stylesheet" href="./FAQ.css">
+    <link rel="stylesheet" href="./account.css">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+<!--Hamburger Button-->
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav_list');
+            navList.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="./images/logo.png" alt="Logo">
+            <span><h1>PiXEL VAULT</h1></span>
+        </section>
+        <section class="search_container">
+            <input type="text" placeholder="Search for games...">
+            <button type="submit"><img src="./images/search_icon (2).png"></button>
+        </section>
+
+        <nav class="nav_links">
+            <section class="hamburger" onclick="toggleMenu()">&#9776;</section>
+            <ul id="nav_list">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./aboutUs.html" class="active">About Us</a></li>
+                <li><a href="./upcomingGames.html" class="active">Upcoming Games</a></li>
+                <li><a href="./games.html" class="active">Games</a></li>
+
+                <!--DropDown List-->
+                <li class="dropdown">
+                    <a href="./consoles&peripherals.html" class="active">Accessories &#x25BC;</a>
+                    <div class="dropdown-content">
+                        <a href="./consoles&peripherals.html#consoles" class="active">Consoles</a>
+                        <a href="./consoles&peripherals.html#peripherals" class="active">Peripherals</a>
+                    </div>
+                </li>
+                <li><a href="./order.html" class="active">Order</a></li>
+                <li><a href="./FAQ.html" class="active">FAQ</a></li>
+                <li><a href="./account.html" class="active">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="categories">
+            <h2>Processors</h2>
+            <div class="item-container" id="processors">
+                <!-- Example items -->
+                <div class="item">
+                    <img src="./images/AMD-RYZEN-7-2700-.png" alt="Processor 1">
+                    <p>Ryzen 7 Series</p>
+                    <p>$1000</p>
+                    <button onclick="addToCart('Ryzen 7 Series', 1000)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/amd-ryzen-8000-series.png" alt="Processor 2">
+                    <p>Ryzen 8 Series</p>
+                    <p>$900</p>
+                    <button onclick="addToCart('Ryzen 8 Series', 900)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/intel-i3.webp" alt="Processor 3">
+                    <p>Intel Core i3</p>
+                    <p>$600</p>
+                    <button onclick="addToCart('Intel Core i3', 600)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/intel-i5.webp" alt="Processor 4">
+                    <p>Intel Core i5</p>
+                    <p>$800</p>
+                    <button onclick="addToCart('Intel Core i5', 800)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/intel-i9.png" alt="Processor 5">
+                    <p>Intel Core i9</p>
+                    <p>$900</p>
+                    <button onclick="addToCart('Intel Core i9', 900)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/intel-xeon.png" alt="Processor 6">
+                    <p>Intel Xeon</p>
+                    <p>$800</p>
+                    <button onclick="addToCart('Intel Xeon', 800)">Add to Cart</button>
+                </div>
+            </div>
+
+            <h2>Graphic Cards</h2>
+            <div class="item-container" id="graphics-cards">
+                <div class="item">
+                    <img src="./images/rx-6800.png" alt="Graphic Card 1">
+                    <p>RX 6800</p>
+                    <p>$400</p>
+                    <button onclick="addToCart('RX 6800', 400)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/rtx-4060.webp" alt="Graphic Card 1">
+                    <p>RTX 4060</p>
+                    <p>$450</p>
+                    <button onclick="addToCart('RTX 4060', 450)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/rtx-4060ti.webp" alt="Graphic Card 1">
+                    <p>RTX 4060ti</p>
+                    <p>$300</p>
+                    <button onclick="addToCart('RTX 4060ti', 300)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/rtx-5070.webp" alt="Graphic Card 1">
+                    <p>RTX 5070</p>
+                    <p>$500</p>
+                    <button onclick="addToCart('RTX 5070', 500)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/gtx-970.png" alt="Graphic Card 1">
+                    <p>GTX 970</p>
+                    <p>$300</p>
+                    <button onclick="addToCart('GTX 970', 300)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/r7-370.png" alt="Graphic Card 1">
+                    <p>R7 370</p>
+                    <p>$400</p>
+                    <button onclick="addToCart('R7 370', 400)">Add to Cart</button>
+                </div>
+            </div>
+
+            <h2>Motherboards</h2>
+            <div class="item-container" id="graphics-cards">
+                <div class="item">
+                    <img src="./images/alpha-force.png" alt="Graphic Card 1">
+                    <p>Alpha Force</p>
+                    <p>$500</p>
+                    <button onclick="addToCart('Alpha Force', 500)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/Asus-b760.png" alt="Graphic Card 1">
+                    <p>ASUS B760</p>
+                    <p>$600</p>
+                    <button onclick="addToCart('ASUS B760', 600)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/asus-x670.png" alt="Graphic Card 1">
+                    <p>ASUS X670</p>
+                    <p>$700</p>
+                    <button onclick="addToCart('ASUS X670', 700)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/gb-b660m.png" alt="Graphic Card 1">
+                    <p>GB B660M</p>
+                    <p>$500</p>
+                    <button onclick="addToCart('GB B660M', 500)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/a520m.webp" alt="Graphic Card 1">
+                    <p>A520M</p>
+                    <p>$400</p>
+                    <button onclick="addToCart('A520M', 400)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/prime-a320.webp" alt="Graphic Card 1">
+                    <p>Prime A320</p>
+                    <p>$400</p>
+                    <button onclick="addToCart('Prime A320', 400)">Add to Cart</button>
+                </div>
+            </div>
+
+            <h2>Memory</h2>
+            <div class="item-container" id="graphics-cards">
+                <div class="item">
+                    <img src="./images/m-amr-ud4p.png" alt="Graphic Card 1">
+                    <p>AMR UD4P</p>
+                    <p>$300</p>
+                    <button onclick="addToCart('AMR UD4P', 300)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/m-cwe-ddr4.avif" alt="Graphic Card 1">
+                    <p>CWE DDR4</p>
+                    <p>$200</p>
+                    <button onclick="addToCart('CWE DDR4', 200)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/m-ddr4-hpe.webp" alt="Graphic Card 1">
+                    <p>DDR4 HPE</p>
+                    <p>$100</p>
+                    <button onclick="addToCart('DDR4 HPE', 100)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/m-ddr5-r5.webp" alt="Graphic Card 1">
+                    <p>DDR5 R5</p>
+                    <p>$100</p>
+                    <button onclick="addToCart('DDR5 R5', 100)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/m-kingston-ddr4.webp" alt="Graphic Card 1">
+                    <p>Kingston DDR4</p>
+                    <p>$200</p>
+                    <button onclick="addToCart('Kingston DDR4', 200)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/m-oscoo-ddr3.webp" alt="Graphic Card 1">
+                    <p>OSCOO DDR3</p>
+                    <p>$300</p>
+                    <button onclick="addToCart('OSCOO DDR3', 300)">Add to Cart</button>
+                </div>
+            </div>
+
+            <h2>Storage Devices</h2>
+            <div class="item-container" id="graphics-cards">
+                <div class="item">
+                    <img src="./images/sd-adata-128.png" alt="Graphic Card 1">
+                    <p>Adata 128GB</p>
+                    <p>$80</p>
+                    <button onclick="addToCart('Adata 128GB', 80)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/sd-hikvision-64gb.png" alt="Graphic Card 1">
+                    <p>HikVision 64GB</p>
+                    <p>$100</p>
+                    <button onclick="addToCart('HikVision 64GB', 100)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/sd-pro-512bg.webp" alt="Graphic Card 1">
+                    <p>Pro 512GB</p>
+                    <p>$90</p>
+                    <button onclick="addToCart('Pro 512GB', 90)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/sd-red-pro-26tb.png" alt="Graphic Card 1">
+                    <p>RED Pro 26TB</p>
+                    <p>$60</p>
+                    <button onclick="addToCart('RED Pro 26TB', 60)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/sd-ssd-advantech.png" alt="Graphic Card 1">
+                    <p>Advantech SSD</p>
+                    <p>$100</p>
+                    <button onclick="addToCart('Advantech SSD', 100)">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img src="./images/sd-ssd-samsung.webp" alt="Graphic Card 1">
+                    <p>Samsung SD</p>
+                    <p>$50</p>
+                    <button onclick="addToCart('Samsung SD', 50)">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be added here -->
+                </tbody>
+            </table>
+            <br>
+            <p id="total-price">Total: $0</p>
+            <br>
+            <button onclick="buyNow()">Buy Now</button>
+            <button onclick="saveFavorites()">Add to Favourites</button>
+            <button onclick="applyFavorites()">Apply Favourites</button>
+        </div>
+    </div>
+
+    <script src="./order.js"></script>
+
+    <footer>
+        <section class="footer_container">
+    
+            <section class="footer_section">
+                <section class="logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </section><br>
+                <p> Your go-to source for gaming news, reviews, guides, and community.</p>
+    
+                <section class="social_links">
+                    <a href="https://web.facebook.com/"><img src="./images/facebook.png" class="socials"></a>
+                    <a href="https://www.instagram.com/"><img src="./images/instagram.png" class="socials"></a>
+                    <a href="https://x.com"><img src="./images/twitter.png" class="socials"></a>
+                    <a href="https://www.youtube.com/"><img src="./images/youtube.webp" class="socials"></a>
+                </section>
+                <br>
+                
+            </section>
+    
+            <section class="footer_section">
+                <h3>Contact</h3><br>
+                <ul class="footer">
+                    <li><a href="mailto:support@pixelvault.com">support@pixelvault.com</a></li>
+                    <li><a>+1 234 567 89</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>Pages</h3><br>
+                <ul class="footer">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./upcomingGames.html">Upcoming Games</a></li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./consoles&peripherals.html">Console and Peripherals</a></li>
+                    <li><a href="./FAQ.html">FAQ</a></li>
+                    <li><a href="./account.html">Account</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>User Terms and Policies</h3><br>
+                <ul class="footer">
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy and Cookies Policy</a></li>
+                </ul>
+                <img src="./images/payment_method.png" class="payment_method">
+            </section>
+            </section><br>
+    
+            <div class="white_line"></div><br>
+            <p class="copyright">&copy; 2024 PiXEL VAULT. All rights reserved.</p>
+        </footer>
+
+</body>
+</html>

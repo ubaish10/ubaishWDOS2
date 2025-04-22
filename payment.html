@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Vault: Checkout</title>
+    <link rel="stylesheet" href="./order.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="stylesheet" href="./upcomingGames.css">
+    <link rel="stylesheet" href="./games.css">
+    <link rel="stylesheet" href="./consoles&peripherals.css">
+    <link rel="stylesheet" href="./FAQ.css">
+    <link rel="stylesheet" href="./account.css">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+<!--Hamburger Button-->
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav_list');
+            navList.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <section class="logo">
+            <img src="./images/logo.png" alt="Logo">
+            <span><h1>PiXEL VAULT</h1></span>
+        </section>
+        <section class="search_container">
+            <input type="text" placeholder="Search for games...">
+            <button type="submit"><img src="./images/search_icon (2).png"></button>
+        </section>
+
+        <nav class="nav_links">
+            <section class="hamburger" onclick="toggleMenu()">&#9776;</section>
+            <ul id="nav_list">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./aboutUs.html" class="active">About Us</a></li>
+                <li><a href="./upcomingGames.html" class="active">Upcoming Games</a></li>
+                <li><a href="./games.html" class="active">Games</a></li>
+
+                <!--DropDown List-->
+                <li class="dropdown">
+                    <a href="./consoles&peripherals.html" class="active">Accessories &#x25BC;</a>
+                    <div class="dropdown-content">
+                        <a href="./consoles&peripherals.html#consoles" class="active">Consoles</a>
+                        <a href="./consoles&peripherals.html#peripherals" class="active">Peripherals</a>
+                    </div>
+                </li>
+                <li><a href="./order.html" class="active">Order</a></li>
+                <li><a href="./FAQ.html" class="active">FAQ</a></li>
+                <li><a href="./account.html" class="active">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <div class="container">
+        <h1>Your Order</h1>
+        <table id="order-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="order-items">
+
+            </tbody>
+        </table>
+        <section id="FAQ_form">
+            <h2>Shipping Address</h2>
+            <form>
+                <section class="FAQ_form_group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter full name" required>
+                </section>
+                <section class="FAQ_form_group">
+                    <label for="contact">Phone Number</label>
+                    <input type="text" id="phone-number" name="phone-number" placeholder="Enter phone number" required>
+                </section>
+                <section class="FAQ_form_group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                </section>
+                <section class="FAQ_form_group">
+                    <label for="severity">Country</label>
+                    <select id="severity" name="severity" required>
+                        <option value="">Select Country</option>
+                        <option value="low">Sri Lanka</option>
+                        <option value="medium">India</option>
+                        <option value="high">China</option>
+                    </select>
+                </section>
+                <section class="FAQ_form_group">
+                    <label for="address">Shipping Address</label>
+                    <input type="text" id="address" name="address" placeholder="Enter shipping address" required>
+                </section><br>
+                <h2>Payment Method</h2>
+                <section class="FAQ_form_group">
+                    <label for="card">Payment Method</label>
+                    <select id="card" name="card" required>
+                        <option value="">Select Payment Method</option>
+                        <option value="visa">VISA</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="american-express">American Express</option>
+                    </select>
+                </section>
+                <section class="FAQ_form_group">
+                    <label for="payment">Card Number</label>
+                    <input type="text" id="payment" name="payment" placeholder="Enter card number" required>
+                </section>
+                <section class="FAQ_form_group">
+                    <label for="c-name">Carholder Name</label>
+                    <input type="text" id="c-name" name="c-name" placeholder="Enter cardholder name" required>
+                </section>
+                <section class="FAQ_form_group">
+                    <label for="e-date">Expiry Date</label>
+                    <input type="text" id="e-date" name="e-date" placeholder="MM/YY" required>
+                </section>
+                <section class="FAQ_form_group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="Enter card security code" required>
+                </section>
+                <button class="explore_now" onclick="processPayment()">Pay</button>
+            </form>
+            <img src="./images/payment_method.png" class="payment_method">
+        </section>
+    </div>
+
+    <script src="./payment.js"></script>
+
+    <footer>
+        <section class="footer_container">
+    
+            <section class="footer_section">
+                <section class="logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </section><br>
+                <p> Your go-to source for gaming news, reviews, guides, and community.</p>
+    
+                <section class="social_links">
+                    <a href="https://web.facebook.com/"><img src="./images/facebook.png" class="socials"></a>
+                    <a href="https://www.instagram.com/"><img src="./images/instagram.png" class="socials"></a>
+                    <a href="https://x.com"><img src="./images/twitter.png" class="socials"></a>
+                    <a href="https://www.youtube.com/"><img src="./images/youtube.webp" class="socials"></a>
+                </section>
+                <br>
+                
+            </section>
+    
+            <section class="footer_section">
+                <h3>Contact</h3><br>
+                <ul class="footer">
+                    <li><a href="mailto:support@pixelvault.com">support@pixelvault.com</a></li>
+                    <li><a>+1 234 567 89</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>Pages</h3><br>
+                <ul class="footer">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./upcomingGames.html">Upcoming Games</a></li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./consoles&peripherals.html">Console and Peripherals</a></li>
+                    <li><a href="./FAQ.html">FAQ</a></li>
+                    <li><a href="./account.html">Account</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>User Terms and Policies</h3><br>
+                <ul class="footer">
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy and Cookies Policy</a></li>
+                </ul>
+                <img src="./images/payment_method.png" class="payment_method">
+            </section>
+            </section><br>
+    
+            <div class="white_line"></div><br>
+            <p class="copyright">&copy; 2024 PiXEL VAULT. All rights reserved.</p>
+        </footer>
+
+</body>
+</html>

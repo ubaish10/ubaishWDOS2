@@ -1,0 +1,183 @@
+/*FAQ Page*/
+
+.FAQ {
+    background-color: #1d1b1b;
+    max-width: 100%;
+    margin: auto; 
+    text-align: center; 
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.FAQ p, h2 {
+    color: white;
+    text-align: center;
+}
+
+.FAQ li {
+    font-size: 13px;
+}
+
+.search_bar_FAQ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.search_bar_input {
+    width: 93%;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #1d1b1b;
+    color: rgb(255, 255, 255);
+    padding-left: 5px;
+}
+
+.search_icon_FAQ {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+.search_icon_FAQ img {
+    width: 30px;
+    height: 30px;
+ 
+}
+
+.white_line {
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    width: 100%;
+    align-items: center;
+}
+
+.FAQ_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: #191919;
+    border-radius: 5px;
+    padding: 10px 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.FAQ_info_section {
+    flex: 1; /* Equal space for each section */
+    margin: 10px 10px;
+    text-align: center;
+    border: #ccc 1px solid; 
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
+
+.FAQ_info_section p {
+    color: #e0e0e0;
+}
+
+.FAQ_info_section p a {
+    text-align: left;
+    text-decoration: none;
+    color: #b0b0b0;
+    transition: 0.3s ease;
+}
+
+.FAQ_info_section p a:hover {
+    color: white;
+}
+
+
+/*Question Form*/
+
+#FAQ_form {
+    background-color: #000000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#FAQ_form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.FAQ_form_group {
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+#FAQ_form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#FAQ_form 
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 30%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+textarea {
+    resize: vertical; /*vertical resizing */
+}
+
+#FAQ_form button {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #35e300;
+    color: rgb(0, 0, 0); 
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#FAQ_form button:hover {
+    background-color: #c30000;
+    color: white;
+    border: white 1px solid;
+}
+
+@media (max-width: 400px) {
+    .FAQ_info {
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .FAQ_info_section {
+        flex: 0 0 90%;
+        margin: 10px 15px;
+    }
+
+    #FAQ_form 
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 80%;
+    } 
+
+    .search_icon_FAQ {
+        margin-right: -8px;
+    }
+    
+}

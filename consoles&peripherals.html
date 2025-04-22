@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Vault: Consoles & Peripherals</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="stylesheet" href="./upcomingGames.css">
+    <link rel="stylesheet" href="./games.css">
+    <link rel="stylesheet" href="./consoles&peripherals.css">
+    <link rel="stylesheet" href="./FAQ.css">
+    <link rel="stylesheet" href="./account.css">
+
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav_list');
+            navList.classList.toggle('active');
+        }
+    </script>
+
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav_list');
+            navList.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="./images/logo.png" alt="Logo">
+            <span><h1>PiXEL VAULT</h1></span>
+        </section>
+        <section class="search_container">
+            <input type="text" placeholder="Search for games...">
+            <button type="submit"><img src="./images/search_icon (2).png"></button>
+        </section>
+
+        <nav class="nav_links">
+            <section class="hamburger" onclick="toggleMenu()">&#9776;</section>
+            <ul id="nav_list">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./aboutUs.html" class="active">About Us</a></li>
+                <li><a href="./upcomingGames.html" class="active">Upcoming Games</a></li>
+                <li><a href="./games.html" class="active">Games</a></li>
+
+                <!--DropDown List-->
+                <li class="dropdown">
+                    <a href="./consoles&peripherals.html" class="active">Accessories &#x25BC;</a>
+                    <div class="dropdown-content">
+                        <a href="./consoles&peripherals.html#consoles" class="active">Consoles</a>
+                        <a href="./consoles&peripherals.html#peripherals" class="active">Peripherals</a>
+                    </div>
+                </li>
+                <li><a href="./order.html" class="active">Order</a></li>
+                <li><a href="./FAQ.html" class="active">FAQ</a></li>
+                <li><a href="./account.html" class="active">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--SlideShow-->
+        <section class="slide_section">
+            <section class="slideshow_container">
+                <section class="slide active" style="background-image: url('./images/cpSlideAsus.jpg');">
+                    <div class="slide_overlay">
+                        <img src="./images/cpSlideAsusLogo.png"><br>
+                        <p>The ASUS ROG laptop is a powerful gaming machine with high-performance hardware, sleek design, and advanced cooling for smooth gameplay and multitasking.</p>
+                        <br>
+                        <p class="price">$684.99</p>
+                        <br>
+                        <button class="explore_now">Get Now</button>
+                    </div>
+                </section>
+                <section class="slide" style="background-image: url('./images/cpSlideRazor.jpg');">
+                    <div class="slide_overlay">
+                        <img src="./images/cpSlideRazerLogo.png"><br>
+                        <p>Razer gaming peripherals offer precision, durability, and style, with high-performance mice, keyboards, and headsets designed for serious gamers.</p>
+                        <br>
+                        <p class="price">$29.99</p>
+                        <br>
+                        <button class="explore_now">Get Now</button>
+                    </div>
+                </section>
+                <section class="slide" style="background-image: url('./images/cpSlidePS.jpg');">
+                    <div class="slide_overlay">
+                        <img src="./images/cpSlidePSLogo.png"><br>
+                        <p>The PS5 is Sony's next-gen console, featuring stunning graphics, fast load times, and an immersive gaming experience with the DualSense controller.</p>
+                        <br>
+                        <p class="price">$499.99</p>
+                        <br>
+                        <button class="explore_now">Get Now</button>
+                    </div>
+                </section>
+            </section>
+            </section>
+        
+        <!--Consoles Section-->
+        <secion id="consoles">
+        <section class="product_section">
+            <h2>Gaming Consoles</h2>
+            <section class="grid_container">
+                <div class="cons_peri_product">
+                    <img src="./images/consoles & peripherals/ps5.webp" alt="Product 1">
+                    <p class="description">Sony PlayStation 5</p>
+                    <p class="price">$499.99</p>
+                    <div class="cons_peri_button">
+                        <button class="buy_now">Buy now</button>
+                        <button class="add_cart">Add Cart</button>
+                        <button class="favorite_button"><img src="./images/fav1.png"></button>
+                    </div>
+                </div>
+                <div class="cons_peri_product">
+                    <img src="./images/consoles & peripherals/nintendo_switch.png" alt="Product 2">
+                    <p class="description">Nintendo Switch 2</p>
+                    <p class="price">$259.99</p>
+                    <div class="cons_peri_button">
+                        <button class="buy_now">Buy now</button>
+                        <button class="add_cart">Add Cart</button>
+                        <button class="favorite_button"><img src="./images/fav1.png"></button>
+                    </div>
+                </div>
+                <div class="cons_peri_product">
+                    <img src="./images/consoles & peripherals/xbox.png" alt="Product 3">
+                    <p class="description">Xbox Series X</p>
+                    <p class="price">$449.99</p>
+                    <div class="cons_peri_button">
+                        <button class="buy_now">Buy now</button>
+                        <button class="add_cart">Add Cart</button>
+                        <button class="favorite_button"><img src="./images/fav1.png"></button>
+                    </div>
+                </div>
+                <div class="cons_peri_product">
+                    <img src="./images/consoles & peripherals/ps4.webp" alt="Product 4">
+                    <p class="description">Sony PlayStation 4</p>
+                    <p class="price">$299.99</p>
+                    <div class="cons_peri_button">
+                        <button class="buy_now">Buy now</button>
+                        <button class="add_cart">Add Cart</button>
+                        <button class="favorite_button"><img src="./images/fav1.png"></button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        </secion>
+
+        <br>
+
+        <!--Peripherals Section-->
+        <section id="peripherals">
+        <section class="product_section">
+            <h2>Gaming Peripherals</h2>
+            <section class="grid_container">
+                <div class="cons_peri_product">
+                    <img src="./images/consoles & peripherals/razer_headset.png" alt="Product 1">
+                    <p class="description">Razer V6 Headset</p>
+                    <p class="price">$49.99</p>
+                    <div class="cons_peri_button">
+                        <button class="buy_now">Buy now</button>
+                        <button class="add_cart">Add Cart</button>
+                        <button class="favorite_button"><img src="./images/fav1.png"></button>
+                    </div>
+                </div>
+                <div class="cons_peri_product">
+                    <img src="./images/consoles & peripherals/Razer_blade15.webp" alt="Product 2">
+                    <p class="description">Razer Blade 15</p>
+                    <p class="price">$789.99</p>
+                    <div class="cons_peri_button">
+                        <button class="buy_now">Buy now</button>
+                        <button class="add_cart">Add Cart</button>
+                        <button class="favorite_button"><img src="./images/fav1.png"></button>
+                    </div>
+                </div>
+                <div class="cons_peri_product">
+                    <img src="./images/consoles & peripherals/razer_keyboard.webp" alt="Product 3">
+                    <p class="description">Razer Hunstman V3</p>
+                    <p class="price">$65.99</p>
+                    <div class="cons_peri_button">
+                        <button class="buy_now">Buy now</button>
+                        <button class="add_cart">Add Cart</button>
+                        <button class="favorite_button"><img src="./images/fav1.png"></button>
+                    </div>
+                </div>
+                <div class="cons_peri_product">
+                    <img src="./images/consoles & peripherals/razer_mouse.webp" alt="Product 4">
+                    <p class="description">Razer Viper V2 Pro</p>
+                    <p class="price">$35.99</p>
+                    <div class="cons_peri_button">
+                        <button class="buy_now">Buy now</button>
+                        <button class="add_cart">Add Cart</button>
+                        <button class="favorite_button"><img src="./images/fav1.png"></button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        </section>
+
+        <section class="product_section">
+            
+            <section class="grid_container">
+                <div class="cons_peri_product">
+                    <img src="./images/consoles & peripherals/Razer_raptor17.png" alt="Product 1">
+                    <p class="description">Razer Raptor 17</p>
+                    <p class="price">$49.99</p>
+                    <div class="cons_peri_button">
+                        <button class="buy_now">Buy now</button>
+                        <button class="add_cart">Add Cart</button>
+                        <button class="favorite_button"><img src="./images/fav1.png"></button>
+                    </div>
+                </div>
+                <div class="cons_peri_product">
+                    <img src="./images/consoles & peripherals/ps5_controller.webp" alt="Product 2">
+                    <p class="description">PlayStation Joystick</p>
+                    <p class="price">$70.99</p>
+                    <div class="cons_peri_button">
+                        <button class="buy_now">Buy now</button>
+                        <button class="add_cart">Add Cart</button>
+                        <button class="favorite_button"><img src="./images/fav1.png"></button>
+                    </div>
+                </div>
+                <div class="cons_peri_product">
+                    <img src="./images/consoles & peripherals/psVR2.png" alt="Product 3">
+                    <p class="description">PlayStation VR</p>
+                    <p class="price">$99.99</p>
+                    <div class="cons_peri_button">
+                        <button class="buy_now">Buy now</button>
+                        <button class="add_cart">Add Cart</button>
+                        <button class="favorite_button"><img src="./images/fav1.png"></button>
+                    </div>
+                </div>
+                <div class="cons_peri_product">
+                    <img src="./images/consoles & peripherals/Asus_rog17.png" alt="Product 4">
+                    <p class="description">Asus ROG 17</p>
+                    <p class="price">$684.99</p>
+                    <div class="cons_peri_button">
+                        <button class="buy_now">Buy now</button>
+                        <button class="add_cart">Add Cart</button>
+                        <button class="favorite_button"><img src="./images/fav1.png"></button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer_container">
+    
+            <section class="footer_section">
+                <section class="logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </section><br>
+                <p> Your go-to source for gaming news, reviews, guides, and community.</p>
+    
+                <section class="social_links">
+                    <a href="https://web.facebook.com/"><img src="./images/facebook.png" class="socials"></a>
+                    <a href="https://www.instagram.com/"><img src="./images/instagram.png" class="socials"></a>
+                    <a href="https://x.com"><img src="./images/twitter.png" class="socials"></a>
+                    <a href="https://www.youtube.com/"><img src="./images/youtube.webp" class="socials"></a>
+                </section>
+            </section>
+    
+            <section class="footer_section">
+                <h3>Contact</h3><br>
+                <ul class="footer">
+                    <li><a href="mailto:support@pixelvault.com">support@pixelvault.com</a></li>
+                    <li><a>+1 234 567 89</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>Pages</h3><br>
+                <ul class="footer">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./upcomingGames.html">Upcoming Games</a></li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./consoles&peripherals.html">Console and Peripherals</a></li>
+                    <li><a href="./FAQ.html">FAQ</a></li>
+                    <li><a href="./account.html">Account</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>User Terms and Policies</h3><br>
+                <ul class="footer">
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy and Cookies Policy</a></li>
+                </ul>
+                <img src="./images/payment_method.png" class="payment_method">
+            </section>
+            </section><br>
+    
+            <div class="white_line"></div><br>
+            <p class="copyright">&copy; 2024 PiXEL VAULT. All rights reserved.</p>
+        </footer>
+
+</body>
+</html>

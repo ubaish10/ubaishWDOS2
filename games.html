@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Vault: Games</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="stylesheet" href="./upcomingGames.css">
+    <link rel="stylesheet" href="./games.css">
+    <link rel="stylesheet" href="./consoles&peripherals.css">
+    <link rel="stylesheet" href="./FAQ.css">
+    <link rel="stylesheet" href="./account.css">
+
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav_list');
+            navList.classList.toggle('active');
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="./images/logo.png" alt="Logo">
+            <span><h1>PiXEL VAULT</h1></span>
+        </section>
+        <section class="search_container">
+            <input type="text" placeholder="Search for games...">
+            <button type="submit"><img src="./images/search_icon (2).png"></button>
+        </section>
+
+        <nav class="nav_links">
+            <section class="hamburger" onclick="toggleMenu()">&#9776;</section>
+            <ul id="nav_list">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./aboutUs.html" class="active">About Us</a></li>
+                <li><a href="./upcomingGames.html" class="active">Upcoming Games</a></li>
+                <li><a href="./games.html" class="active">Games</a></li>
+
+                <!--DropDown List-->
+                <li class="dropdown">
+                    <a href="./consoles&peripherals.html" class="active">Accessories &#x25BC;</a>
+                    <div class="dropdown-content">
+                        <a href="./consoles&peripherals.html#consoles" class="active">Consoles</a>
+                        <a href="./consoles&peripherals.html#peripherals" class="active">Peripherals</a>
+                    </div>
+                </li>
+                <li><a href="./order.html" class="active">Order</a></li>
+                <li><a href="./FAQ.html" class="active">FAQ</a></li>
+                <li><a href="./account.html" class="active">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--SlideShow-->
+        <section class="slide_section">
+        <section class="slideshow_container">
+            <section class="slide active" style="background-image: url('./images/games/slideshow/slideshow8.jpeg');">
+                <div class="slide_overlay">
+                    <img src="./images/games/slideshow/slide_logo_COD.png"><br>
+                    <p>Call of Duty is a popular first-person shooter series known for its action, multiplayer, and modes like Warzone and Zombies.</p>
+                    <br>
+                    <p class="price">$29.99</p>
+                    <br>
+                    <button class="explore_now" id="scroll-button">Explore Now</button>
+                </div>
+            </section>
+            <section class="slide" style="background-image: url('./images/games/slideshow/slideshow6.webp');">
+                <div class="slide_overlay">
+                    <img src="./images/games/slideshow/slide_logo_fc.png"><br>
+                    <p>FC 25 is a football game featuring realistic gameplay, team management, and competitive matches for an exciting experience.</p>
+                    <br>
+                    <p class="price">$29.99</p>
+                    <br>
+                    <button class="explore_now" id="scroll-button">Explore Now</button>
+                </div>
+            </section>
+            <section class="slide" style="background-image: url('./images/games/slideshow/slideshow9.jpg');">
+                <div class="slide_overlay">
+                    <img src="./images/games/slideshow/slide_logo_MC.png"><br>
+                    <p>Minecraft is a popular sandbox game that lets players build, explore, and survive in a blocky real life like world.</p>
+                    <br>
+                    <p class="price">$29.99</p>
+                    <br>
+                    <button class="explore_now" id="scroll-button">Explore Now</button>
+                </div>
+            </section>
+        </section>
+        </section>
+        
+        <!--Games Section-->
+        <section class="game_section">
+            <section class="game_category">
+                <section class="game_container">
+                    <section class="game">
+                        <div class="game_img_overlay">
+                            <img src="./images/games/fc_24.jpg" alt="Game 1" class="game_img">
+                            <div class="overlay_description">FC 25 delivers thrilling, fast-paced soccer with skillful players and strategies.</div>
+                        </div>
+                        <p class="caption">FC 24</p>
+                        <p class="price">$29.99</p>
+                        <div class="cons_peri_button">
+                            <button class="add_cart">Download</button>
+                            <a href="./account.html"><button class="favorite_button"><img src="./images/fav1.png"></button></a>
+                        </div>
+                    </section>
+                    <section class="game">
+                        <div class="game_img_overlay">
+                            <img src="./images/games/NBA.jpeg" alt="Game 2" class="game_img">
+                            <div class="overlay_description">NBA 2K24 features advanced graphics, realistic gameplay, and engaging game modes.</div>
+                        </div>
+                        <p class="caption">NBA 2K24</p>
+                        <p class="price">$39.99</p>
+                        <div class="cons_peri_button">
+                            <button class="add_cart">Download</button>
+                            <button class="favorite_button"><img src="./images/fav1.png"></button>
+                        </div>
+                    </section>
+                    <section class="game">
+                        <div class="game_img_overlay">
+                            <img src="./images/games/F1.webp" alt="Game 3" class="game_img">
+                            <div class="overlay_description">F1 delivers high-speed racing, realistic physics, and thrilling competition gameplay.</div>
+                        </div>
+                        <p class="caption">F1 23</p>
+                        <p class="price">$49.99</p>
+                        <div class="cons_peri_button">
+                            <button class="add_cart">Download</button>
+                            <button class="favorite_button"><img src="./images/fav1.png"></button>
+                        </div>
+                    </section>
+                    <section class="game">
+                        <div class="game_img_overlay">
+                            <img src="./images/games/Fortnite.jpg" alt="Game 7" class="game_img">
+                            <div class="overlay_description">Fortnite features battle royale action, creative modes, and vibrant gameplay.</div>
+                        </div>
+                        <p class="caption">Fortnite</p>
+                        <p class="price">Free</p>
+                        <div class="cons_peri_button">
+                            <button class="add_cart">Download</button>
+                            <button class="favorite_button"><img src="./images/fav1.png"></button>
+                        </div>
+                    </section>
+                    <section class="game">
+                        <div class="game_img_overlay">
+                            <img src="./images/games/valorant.jpg" alt="Game 8" class="game_img">
+                            <div class="overlay_description">Valorant combines tactical shooting, unique agents, and strategic team gameplay.</div>
+                        </div>
+                        <p class="caption">Valorant</p>
+                        <p class="price">Free</p>
+                        <div class="cons_peri_button">
+                            <button class="add_cart">Download</button>
+                            <button class="favorite_button"><img src="./images/fav1.png"></button>
+                        </div>
+                    </section>
+                    <section class="game">
+                        <div class="game_img_overlay">
+                            <img src="./images/games/minecraft.jpg" alt="Game 9" class="game_img">
+                            <div class="overlay_description">Minecraft offers creative building, exploration, survival, and endless adventure possibilities</div>
+                        </div>
+                        <p class="caption">Minecraft</p>
+                        <p class="price">Free</p>
+                        <div class="cons_peri_button">
+                            <button class="add_cart">Download</button>
+                            <button class="favorite_button"><img src="./images/fav1.png"></button>
+                        </div>
+                    </section>
+                </section>
+            </section>
+    
+            <section class="game_category">
+                <section class="game_container">
+                    <section class="game">
+                        <div class="game_img_overlay">
+                            <img src="./images/games/mortal_kombat.webp" alt="Game 4" class="game_img">
+                            <div class="overlay_description">Mortal Kombat features brutal combat, iconic characters, and intense finishing moves.</div>
+                        </div>
+                        <p class="caption">Mortal Kombat</p>
+                        <p class="price">$29.99</p>
+                        <div class="cons_peri_button">
+                            <button class="add_cart">Download</button>
+                            <button class="favorite_button"><img src="./images/fav1.png"></button>
+                        </div>
+                    </section>
+                    <section class="game">
+                        <div class="game_img_overlay">
+                            <img src="./images/games/for_honor.jpg" alt="Game 5" class="game_img">
+                            <div class="overlay_description">For Honor offers strategic combat, diverse factions, and intense melee battles.</div>
+                        </div>
+                        <p class="caption">For Honor</p>
+                        <p class="price">$39.99</p>
+                        <div class="cons_peri_button">
+                            <button class="add_cart">Download</button>
+                            <button class="favorite_button"><img src="./images/fav1.png"></button>
+                        </div>
+                    </section>
+                    <section class="game">
+                        <div class="game_img_overlay">
+                            <img src="./images/games/COD.png" alt="Game 6" class="game_img">
+                            <div class="overlay_description">Call of Duty delivers fast-paced shooting, intense warfare, and multiplayer action.</div>
+                        </div>
+                        <p class="caption">Call of Duty</p>
+                        <p class="price">$49.99</p>
+                        <div class="cons_peri_button">
+                            <button class="add_cart">Download</button>
+                            <button class="favorite_button"><img src="./images/fav1.png"></button>
+                        </div>
+                    </section>
+                    <section class="game">
+                        <div class="game_img_overlay">
+                            <img src="./images/games/unchartered.jpg" alt="Game 7" class="game_img">
+                            <div class="overlay_description">Uncharted 4 offers thrilling adventure, treasure hunting, and cinematic storytelling.</div>
+                        </div>
+                        <p class="caption">Unchartered 4</p>
+                        <p class="price">$29.99</p>
+                        <div class="cons_peri_button">
+                            <button class="add_cart">Download</button>
+                            <button class="favorite_button"><img src="./images/fav1.png"></button>
+                        </div>
+                    </section>
+                    <section class="game">
+                        <div class="game_img_overlay">
+                            <img src="./images/games/far_cry.jpg" alt="Game 8" class="game_img">
+                            <div class="overlay_description">Far Cry 4 features open-world exploration, intense combat, and thrilling missions.</div>
+                        </div>
+                        <p class="caption">FarCry 4</p>
+                        <p class="price">$39.99</p>
+                        <div class="cons_peri_button">
+                            <button class="add_cart">Download</button>
+                            <button class="favorite_button"><img src="./images/fav1.png"></button>
+                        </div>
+                    </section>
+                    <section class="game">
+                        <div class="game_img_overlay">
+                            <img src="./images/games/red_dead_redemption.jpg" alt="Game 9" class="game_img">
+                            <div class="overlay_description">Red Dead Redemption offers immersive storytelling, vast open world, and intense action.</div>
+                        </div>
+                        <p class="caption">Red Dead Redemption</p>
+                        <p class="price">$49.99</p>
+                        <div class="cons_peri_button">
+                            <button class="add_cart">Download</button>
+                            <button class="favorite_button"><img src="./images/fav1.png"></button>
+                        </div>
+                    </section>
+                </section>
+            </section>
+    
+        </section>
+
+    </main>
+
+
+    <footer>
+        <section class="footer_container">
+    
+            <section class="footer_section">
+                <section class="logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </section><br>
+                <p> Your go-to source for gaming news, reviews, guides, and community.</p>
+    
+                <section class="social_links">
+                    <a href="https://web.facebook.com/"><img src="./images/facebook.png" class="socials"></a>
+                    <a href="https://www.instagram.com/"><img src="./images/instagram.png" class="socials"></a>
+                    <a href="https://x.com"><img src="./images/twitter.png" class="socials"></a>
+                    <a href="https://www.youtube.com/"><img src="./images/youtube.webp" class="socials"></a>
+                </section>
+            </section>
+    
+            <section class="footer_section">
+                <h3>Contact</h3><br>
+                <ul class="footer">
+                    <li><a href="mailto:support@pixelvault.com">support@pixelvault.com</a></li>
+                    <li><a>+1 234 567 89</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>Pages</h3><br>
+                <ul class="footer">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./upcomingGames.html">Upcoming Games</a></li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./consoles&peripherals.html">Console and Peripherals</a></li>
+                    <li><a href="./FAQ.html">FAQ</a></li>
+                    <li><a href="./account.html">Account</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>User Terms and Policies</h3><br>
+                <ul class="footer">
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy and Cookies Policy</a></li>
+                </ul>
+                <img src="./images/payment_method.png" class="payment_method">
+            </section>
+            </section><br>
+    
+            <div class="white_line"></div><br>
+            <p class="copyright">&copy; 2024 PiXEL VAULT. All rights reserved.</p>
+        </footer>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Vault: FAQ</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="stylesheet" href="./upcomingGames.css">
+    <link rel="stylesheet" href="./games.css">
+    <link rel="stylesheet" href="./consoles&peripherals.css">
+    <link rel="stylesheet" href="./FAQ.css">
+    <link rel="stylesheet" href="./account.css">
+
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav_list');
+            navList.classList.toggle('active');
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="./images/logo.png" alt="Logo">
+            <span><h1>PiXEL VAULT</h1></span>
+        </section>
+        <section class="search_container">
+            <input type="text" placeholder="Search for games...">
+            <button type="submit"><img src="./images/search_icon (2).png"></button>
+        </section>
+
+        <nav class="nav_links">
+            <section class="hamburger" onclick="toggleMenu()">&#9776;</section>
+            <ul id="nav_list">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./aboutUs.html" class="active">About Us</a></li>
+                <li><a href="./upcomingGames.html" class="active">Upcoming Games</a></li>
+                <li><a href="./games.html" class="active">Games</a></li>
+
+                <!--DropDown List-->
+                <li class="dropdown">
+                    <a href="./consoles&peripherals.html" class="active">Accessories &#x25BC;</a>
+                    <div class="dropdown-content">
+                        <a href="./consoles&peripherals.html#consoles" class="active">Consoles</a>
+                        <a href="./consoles&peripherals.html#peripherals" class="active">Peripherals</a>
+                    </div>
+                </li>
+                <li><a href="./order.html" class="active">Order</a></li>
+                <li><a href="./FAQ.html" class="active">FAQ</a></li>
+                <li><a href="./account.html" class="active">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="FAQ">
+            <h2>GET YOUR QUESTIONS ANSWERED</h2>
+            <p>Find answers to the most commonly asked questions below. Search for topics you're interested in
+               or sort by category.<br>
+            
+            </p>
+            <div class="search_bar_FAQ">
+                <input type="text" class="search_bar_input" placeholder="Search for a question...">
+                <button class="search_icon_FAQ">
+                    <img src="./images/search_icon (2).png" alt="Search">
+                </button>
+            </div>
+            <div class="white_line"></div><br>
+
+            <!--Question Answer Section-->
+            <section class="FAQ_info">
+                <article class="FAQ_info_section">
+                    <h3>What payment methods are accepted?</h3>
+                        <p>Credit & Debit Cards (Visa, MasterCard)</p>
+                        <p>Digital wallets (PayPal, Apple Pay)</p>
+                        <p>Store-specific gift cards or credits
+                        <br><br><br><br>
+                        <a href="#">was this helpful?</a></p>
+                </article>
+
+                <article class="FAQ_info_section">
+                    <h3>How do I redeem a gifted game code?</h3>
+                    <p>Go to the store's website or app and log into your account. Navigate to the "Redeem Code" section, 
+                       enter the code and follow the prompts to add the game to your library.<br><br><br><br>
+                    
+                    <a href="#">was this helpful?</a>
+                    </p>
+                </article>
+
+                <article class="FAQ_info_section">
+                    <h3>Can I return a game or console if I dont like it?</h3>
+                    <p>Returns are accepted within 14 days for unopened items. However cash will not be refunded yet you'll be able to
+                       exchange with any item from our store.<br><br><br><br><br>
+                       <a href="#">was this helpful?</a>
+                    </p>
+                </article>
+            </section><br>
+            <p>If you have additional questions that are not addessed in ou FAQ page, please don't hesitate
+                to contact us or fill out the form below.<br> Our team will respond to you as soon as possible.
+                Click the button below to fill the form</p>
+                <a href="#FAQ_form"><button class="explore_now" id="scroll-button">Click Here!</button></a>
+        </section>
+
+        <!--Question Form-->
+        <section id="FAQ_form">
+            <h2>Ask a Question</h2>
+            <form>
+                <section class="FAQ_form_group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Enter full name" required>
+                </section>
+                <section class="FAQ_form_group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                </section>
+                <section class="FAQ_form_group">
+                    <label for="severity">Severity of Your Question</label>
+                    <select id="severity" name="severity" required>
+                        <option value="">Select Severity</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </section>
+                <section class="FAQ_form_group">
+                    <label for="question">Your Question</label>
+                    <textarea id="question" name="question" rows="5" placeholder="Ask your question..." required></textarea>
+                </section>
+                <button class="explore_now" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <section class="footer_container">
+    
+            <section class="footer_section">
+                <section class="logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </section><br>
+                <p> Your go-to source for gaming news, reviews, guides, and community.</p>
+    
+                <section class="social_links">
+                    <a href="https://web.facebook.com/"><img src="./images/facebook.png" class="socials"></a>
+                    <a href="https://www.instagram.com/"><img src="./images/instagram.png" class="socials"></a>
+                    <a href="https://x.com"><img src="./images/twitter.png" class="socials"></a>
+                    <a href="https://www.youtube.com/"><img src="./images/youtube.webp" class="socials"></a>
+                </section>
+            </section>
+    
+            <section class="footer_section">
+                <h3>Contact</h3><br>
+                <ul class="footer">
+                    <li><a href="mailto:support@pixelvault.com">support@pixelvault.com</a></li>
+                    <li><a>+1 234 567 89</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>Pages</h3><br>
+                <ul class="footer">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./upcomingGames.html">Upcoming Games</a></li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./consoles&peripherals.html">Console and Peripherals</a></li>
+                    <li><a href="./FAQ.html">FAQ</a></li>
+                    <li><a href="./account.html">Account</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>User Terms and Policies</h3><br>
+                <ul class="footer">
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy and Cookies Policy</a></li>
+                </ul>
+                <img src="./images/payment_method.png" class="payment_method">
+            </section>
+            </section><br>
+    
+            <div class="white_line"></div><br>
+            <p class="copyright">&copy; 2024 PiXEL VAULT. All rights reserved.</p>
+        </footer>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Vault: About Us</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="stylesheet" href="./upcomingGames.css">
+    <link rel="stylesheet" href="./games.css">
+    <link rel="stylesheet" href="./consoles&peripherals.css">
+    <link rel="stylesheet" href="./FAQ.css">
+    <link rel="stylesheet" href="./account.css">
+
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav_list');
+            navList.classList.toggle('active');
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="./images/logo.png" alt="Logo">
+            <span><h1>PiXEL VAULT</h1></span>
+        </section>
+        <section class="search_container">
+            <input type="text" placeholder="Search for games...">
+            <button type="submit"><img src="./images/search_icon (2).png"></button>
+        </section>
+
+        <nav class="nav_links">
+            <section class="hamburger" onclick="toggleMenu()">&#9776;</section>
+            <ul id="nav_list">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./aboutUs.html" class="active">About Us</a></li>
+                <li><a href="./upcomingGames.html" class="active">Upcoming Games</a></li>
+                <li><a href="./games.html" class="active">Games</a></li>
+
+                <!--DropDown List-->
+                <li class="dropdown">
+                    <a href="./consoles&peripherals.html" class="active">Accessories &#x25BC;</a>
+                    <div class="dropdown-content">
+                        <a href="./consoles&peripherals.html#consoles" class="active">Consoles</a>
+                        <a href="./consoles&peripherals.html#peripherals" class="active">Peripherals</a>
+                    </div>
+                </li>
+                <li><a href="./order.html" class="active">Order</a></li>
+                <li><a href="./FAQ.html" class="active">FAQ</a></li>
+                <li><a href="./account.html" class="active">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about_us_intro">
+            <h2>About Us</h2>
+            <p>Founded in 2016, Pixel vault has grown from a small blog into a global gaming hub, bringing together passionate
+               players from around the world. We offer the latest news, reviews, guides, and a thriving community for gamers of all levels.
+               Have questions or want to connect? Reach us at <a href="mailto:support@pixelvault.com"><i>support@pixelvault.com</i></a>.
+            </p>
+        </section>
+        <br>
+
+        <!--Store Information-->
+        <section class="about_us_info">
+            <article class="info_section">
+                <h3>Pixel Vault: Colombo 07</h3>
+                <p>Established in 2010, the flagship location with the largest selection of games and gear.</p><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31686.92586839721!2d79.83902293598173!3d6.90665451266971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25965b24c69c1%3A0xe50886d0050a5ed5!2sColombo%2007%2C%20Colombo%2000700!5e0!3m2!1sen!2slk!4v1736948266343!5m2!1sen!2slk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img src="./images/game_store4.jpg" alt="Description of Image 1" class="game_store">
+                <p>123 Hill Street, Colombo, Sri Lanka</p>
+                <p><b>Contact:</b> 011223344</p>
+            </article>
+            <article class="info_section">
+                <h3>Pixel Vault: Kandy Town</h3>
+                <p>Opened in 2016, a cozy spot for games and community events offering game testing and more.</p><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63320.41806356989!2d80.58458112357604!3d7.294628573684748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy!5e0!3m2!1sen!2slk!4v1736948073963!5m2!1sen!2slk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img src="./images/game_store6.webp" alt="Description of Image 2" class="game_store">
+                <p>678 Peradeniya Rd, Kandy, Sri Lanka</p>
+                <p><b>Contact:</b> 011223344</p>
+            </article>
+            <article class="info_section">
+                <h3>Pixel Vault: Colombo 05</h3>
+                <p>Opened in 2020, a premium destination for high-end games, gaming gear and exclusives</p><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.277497952087!2d79.85178853597009!3d6.886448665755364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd260b4fa11%3A0xf580e12fb12d21f3!2sColombo%2005%2C%20Colombo!5e0!3m2!1sen!2slk!4v1736948302991!5m2!1sen!2slk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img src="./images/game_store5.webp" alt="Description of Image 3" class="game_store">
+                <p>258 DownStreet, Colombo, Sri Lanka</p>
+                <p><b>Contact:</b> 011223344</p>
+            </article>
+        </section>
+        <br>
+
+        <!--Store Summary-->
+        <section class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Branch</th>
+                        <th>Opening Hours</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Colombo 07</td>
+                        <td>10 a.m - 8 p.m</td>
+                        <td>123 Hill Street, Colombo, Sri Lanka</td>
+                    </tr>
+                    <tr>
+                        <td>Kandy Town</td>
+                        <td>10 a.m - 8 p.m</td>
+                        <td>678 Peradeniya Rd, Kandy, Sri Lanka</td>
+                    </tr>
+                    <tr>
+                        <td>Colombo 05</td>
+                        <td>10 a.m - 8 p.m</td>
+                        <td>258 DownStreet, Colombo, Sri Lanka</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                    <td colspan="3"><b>For inquiries, contact us at <a href="mailto:support@pixelvault.com"><i>support@pixelvault.com</i></a></b></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <section class="footer_container">
+    
+            <section class="footer_section">
+                <section class="logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </section><br>
+                <p> Your go-to source for gaming news, reviews, guides, and community.</p>
+    
+                <section class="social_links">
+                    <a href="https://web.facebook.com/"><img src="./images/facebook.png" class="socials"></a>
+                    <a href="https://www.instagram.com/"><img src="./images/instagram.png" class="socials"></a>
+                    <a href="https://x.com"><img src="./images/twitter.png" class="socials"></a>
+                    <a href="https://www.youtube.com/"><img src="./images/youtube.webp" class="socials"></a>
+                </section>
+            </section>
+    
+            <section class="footer_section">
+                <h3>Contact</h3><br>
+                <ul class="footer">
+                    <li><a href="mailto:support@pixelvault.com">support@pixelvault.com</a></li>
+                    <li><a>+1 234 567 89</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>Pages</h3><br>
+                <ul class="footer">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./upcomingGames.html">Upcoming Games</a></li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./consoles&peripherals.html">Console and Peripherals</a></li>
+                    <li><a href="./FAQ.html">FAQ</a></li>
+                    <li><a href="./account.html">Account</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer_section">
+                <h3>User Terms and Policies</h3><br>
+                <ul class="footer">
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy and Cookies Policy</a></li>
+                </ul>
+                <img src="./images/payment_method.png" class="payment_method">
+            </section>
+            </section><br>
+    
+            <div class="white_line"></div><br>
+            <p class="copyright">&copy; 2024 PiXEL VAULT. All rights reserved.</p>
+        </footer>
+
+</body>
+</html>

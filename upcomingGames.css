@@ -1,0 +1,147 @@
+/*Upcoming Games Page*/
+
+.ug_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap; /*wrapping on smaller screens */
+    color: white;
+    background-color: #191919;
+    border-radius: 5px
+}
+
+.ug {
+    flex: 1; /* Equal space for each section */
+    margin: 17px;
+    position: relative;
+}
+
+.section_1 {
+    background-image: url('./images/upcominggames.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.section_1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1; /* Ensure overlay is above the background */
+}
+
+.ug_text {
+    text-align: center; 
+    z-index: 3; /* Ensure text is above the overlay */
+    position: relative;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    cursor: pointer;
+}
+
+.section_2 {
+    overflow-x: auto;
+}
+
+.ug_image_container {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+}
+
+.ug_image_row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 5px;
+}
+
+.ug_image_row img {
+    height: 170px;
+}
+
+figure {
+    position: relative;
+    margin: 10px 0;
+    margin-left: 5px;
+    overflow: hidden; /* Hide overflow */
+    flex: 1;
+    max-width: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    scroll-snap-align: center;
+}
+
+figure img {
+    width: 100%; 
+    height: auto;
+    transition: transform 0.3s ease;
+    display: block;
+
+}
+
+figure:hover img {
+    transform: scale(1.05);
+}
+
+figcaption {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+figure:hover .overlay{
+    height: 50%;
+}
+
+.overlay p {
+    margin: 0;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .ug_container {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .ug_image_row {
+        flex-direction: row;
+        overflow-x: auto; /*Mobile Side Scrolling*/
+        scroll-snap-type: x mandatory;
+    }
+
+    .ug_image_row figure {
+        flex: 0 0 200px;
+    }
+
+    .ug_image_row figure img {
+        width: 100%;
+    }
+}

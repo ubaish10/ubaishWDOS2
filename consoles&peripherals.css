@@ -1,0 +1,128 @@
+/*Consoles & Peripherals Page*/
+
+.product_section {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #1d1b1b;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.product_section h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.product_section p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 10px;
+    padding: 0 10px;
+    overflow-x: auto;
+}
+
+.cons_peri_product {
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #000000;
+}
+
+.cons_peri_product img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image */
+}
+
+.cons_peri_product img {
+    width: 80%;
+    height: 130px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.description {
+    margin: 10px 0;
+}
+
+.price {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.cons_peri_button {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.cons_peri_button button {
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.add_cart{
+    background-color: #00fe15;
+    color: white;
+    height: 30px;
+    padding: 0 10px;
+    transition: 0.4s ease;
+}
+
+.add_cart:hover {
+    background-color: #00b30f;
+}
+
+.buy_now{
+    background-color: #c30404;
+    color: white;
+    height: 30px;
+    padding: 0 10px;
+    transition: 0.4s ease;
+}
+
+.buy_now:hover {
+    background-color: #8f0101;
+}
+
+.favorite_button{
+    background-color: #000000;
+    height: 30px;
+    padding: 0;
+}
+
+.favorite_button img:hover {
+    filter: invert(0);
+}
+
+.favorite_button img{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+    transition: 0.4s ease;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+    .grid_container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .cons_peri_product {
+        flex: 0 0 250px;
+        
+    }   
+
+    .cons_peri_product img {
+        width: 100%;
+    }
+}
